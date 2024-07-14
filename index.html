@@ -1,24 +1,4 @@
-<?php
-  // Set default meta tags
-  $meta_title = "F-GEX Solutions";
-  $meta_description = "F-GEX Solutions offers innovative IoT, Networking, Automation, and SDN services.";
-  $meta_keywords = "IoT, Networking, Automation, Software-Defined Networking, SDN, WiFi Solutions";
 
-  // Example of how you might set meta tags dynamically based on URL or other criteria
-  $url_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-  if ($url_path == '/about') {
-    $meta_title = "About F-GEX Solutions";
-    $meta_description = "Learn more about F-GEX Solutions and our mission to provide cutting-edge IoT and networking services.";
-  } elseif ($url_path == '/services') {
-    $meta_title = "Our Services - F-GEX Solutions";
-    $meta_description = "Explore the range of services offered by F-GEX Solutions, including IoT, networking, and automation.";
-  }
-
-  // Output meta tags
-  echo "<title>$meta_title</title>";
-  echo "<meta name='description' content='$meta_description'>";
-  echo "<meta name='keywords' content='$meta_keywords'>";
-?>
 
 <!DOCTYPE html>
 <html lang="en">
